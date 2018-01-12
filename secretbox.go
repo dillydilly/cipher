@@ -1,7 +1,7 @@
 // Package secretbox encrypts and authenticates small messages.
 // Secretbox uses XSalsa20 and Poly1305 to encrypt and authenticate messages
 // with secret-key cryptography. The length of messages is not hidden.
-package mycipher
+package cipher
 
 import (
 	"io"
