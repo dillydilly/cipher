@@ -4,12 +4,12 @@ import (
 	"bytes"
 	"crypto/aes"
 	"crypto/cipher"
-	"cyc10p5/myrand"
 	"fmt"
 	"io"
 	"log"
 
 	"github.com/awnumar/memguard"
+	myrand "github.com/dillydilly/rand"
 )
 
 /*

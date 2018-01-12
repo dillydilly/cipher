@@ -1,21 +1,21 @@
 package mycipher
 
 import (
+	"bytes"
 	"crypto/aes"
 	"crypto/cipher"
-	"encoding/base64"
 	"crypto/hmac"
 	"crypto/sha256"
-	"bytes"
-	"os"
-	"io"
+	"encoding/base64"
 	"fmt"
+	"io"
+	"os"
 
-	"cyc10p5/myrand"
+	myrand "github.com/dillydilly/rand"
 )
 
 const (
-	HMACSize	= 32
+	HMACSize = 32
 )
 
 func EncryptAESCFB(key []byte, sf, df string) error {
@@ -141,4 +141,3 @@ func DecryptAESCFB(key []byte, sf, df string) error {
 	}
 	return nil
 }
-

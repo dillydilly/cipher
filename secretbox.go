@@ -4,12 +4,12 @@
 package mycipher
 
 import (
-	"cyc10p5/myrand"
 	"io"
 	"log"
 	"unsafe"
 
 	"github.com/awnumar/memguard"
+	myrand "github.com/dillydilly/rand"
 	"golang.org/x/crypto/nacl/secretbox"
 )
 
